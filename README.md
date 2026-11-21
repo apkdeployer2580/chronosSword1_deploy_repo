@@ -200,3 +200,19 @@ cargo test -p arm32_cpu --release
 * AGP 8.7 은 JDK 17+ 가 필요하다. PATH 의 첫 `java` 가 Java 8 이면
   "Dependency requires at least JVM runtime version 11" 로 죽는데, 이 메시지는
   `JAVA_HOME` 을 언급하지 않는다.
+
+<!-- release-section -->
+## 최신 릴리스 (APK)
+
+**[최신 APK 받기 → Releases](https://github.com/apkdeployer2580/chronosSword1_deploy_repo/releases/latest)**
+
+| 파일 | versionCode |
+|---|---|
+| `chronosSword1_v0.119.apk` | 119 |
+
+**이미 설치해서 하던 분 — 세이브를 그대로 이어 하려면**
+
+* 앱을 **지우지 말고** 받은 APK 를 그대로 설치하세요. 업데이트로 덮어 설치되고 세이브가 그대로 남습니다.
+* ⚠ 앱을 지우면 세이브도 함께 지워지고 되살릴 수 없습니다.
+* 「앱이 설치되지 않았습니다」가 뜨면 서명이 다른 APK(예: 이 소스로 직접 빌드한 APK)가 깔려 있는 것입니다. 게임의 환경설정 맨 아래 「세이브 내보내기」로 세이브를 파일로 빼 두고, 그 앱을 지운 뒤 새 APK 를 설치해서 「세이브 불러오기」로 넣으세요.
+* 공식 APK 의 서명 인증서 SHA-256: `4b98e6349d3b3d31ad4ca6fdce90045468c2d85e2ca79e360a831893c39f0c47`
