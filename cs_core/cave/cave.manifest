@@ -1,0 +1,271 @@
+base 0x11b0000
+size 0x47f0
+bss_end 0x11c617c
+patch bag10 0x01113f08 0x0117d1fc 0x011b47f4 GOT[_storage] := storage10
+patch bag10 0x01064730 0xe1d534d0 0xe1d537dc GameMenuFrame_drawBsBag+0x154 imm -> 0x7c
+patch bag10 0x01064cd4 0xe5d33040 0xe5d3307c GameMenuFrame_drawBsBag+0x6f8 imm -> 0x7c
+patch bag10 0x01064de8 0xe1d714d0 0xe1d717dc GameMenuFrame_drawBsBag+0x80c imm -> 0x7c
+patch bag10 0x01064e0c 0xe5d70040 0xe5d7007c GameMenuFrame_drawBsBag+0x830 imm -> 0x7c
+patch bag10 0x01064e4c 0xe5d70040 0xe5d7007c GameMenuFrame_drawBsBag+0x870 imm -> 0x7c
+patch bag10 0x0106e440 0xe5d1c040 0xe5d1c07c GameMenuFrame_simpleBagKeyOnCube+0x258 imm -> 0x7c
+patch bag10 0x0106e474 0xc5c1c040 0xc5c1c07c GameMenuFrame_simpleBagKeyOnCube+0x28c imm -> 0x7c
+patch bag10 0x0106e478 0xd5c1c040 0xd5c1c07c GameMenuFrame_simpleBagKeyOnCube+0x290 imm -> 0x7c
+patch bag10 0x0106e4b4 0xe5d32040 0xe5d3207c GameMenuFrame_simpleBagKeyOnCube+0x2cc imm -> 0x7c
+patch bag10 0x0106e4dc 0xd5c32040 0xd5c3207c GameMenuFrame_simpleBagKeyOnCube+0x2f4 imm -> 0x7c
+patch bag10 0x0106e4e0 0xc5c32040 0xc5c3207c GameMenuFrame_simpleBagKeyOnCube+0x2f8 imm -> 0x7c
+patch bag10 0x0106e570 0xe5c23040 0xe5c2307c GameMenuFrame_simpleBagKeyOnCube+0x388 imm -> 0x7c
+patch bag10 0x0106e598 0xe5d32040 0xe5d3207c GameMenuFrame_simpleBagKeyOnCube+0x3b0 imm -> 0x7c
+patch bag10 0x0106e5ac 0xc5c32040 0xc5c3207c GameMenuFrame_simpleBagKeyOnCube+0x3c4 imm -> 0x7c
+patch bag10 0x0106e5b0 0xd5c32040 0xd5c3207c GameMenuFrame_simpleBagKeyOnCube+0x3c8 imm -> 0x7c
+patch bag10 0x0106e5e0 0xe5d32040 0xe5d3207c GameMenuFrame_simpleBagKeyOnCube+0x3f8 imm -> 0x7c
+patch bag10 0x0106e5f4 0xd5c32040 0xd5c3207c GameMenuFrame_simpleBagKeyOnCube+0x40c imm -> 0x7c
+patch bag10 0x0106e5f8 0xc5c32040 0xc5c3207c GameMenuFrame_simpleBagKeyOnCube+0x410 imm -> 0x7c
+patch bag10 0x0106e7c0 0xe5c25040 0xe5c2507c GameMenuFrame_simpleBagKeyOnCube+0x5d8 imm -> 0x7c
+patch bag10 0x0106e95c 0xe1d324d0 0xe1d327dc GameMenuFrame_simpleBagKeyOnCube+0x774 imm -> 0x7c
+patch bag10 0x0106e96c 0x15c37040 0x15c3707c GameMenuFrame_simpleBagKeyOnCube+0x784 imm -> 0x7c
+patch bag10 0x0106e994 0xe5d80040 0xe5d8007c GameMenuFrame_simpleBagKeyOnCube+0x7ac imm -> 0x7c
+patch bag10 0x0106e9cc 0xe5d80040 0xe5d8007c GameMenuFrame_simpleBagKeyOnCube+0x7e4 imm -> 0x7c
+patch bag10 0x0107020c 0xe1d614d0 0xe1d617dc IGM_itemComposeKeyPressed+0x40 imm -> 0x7c
+patch bag10 0x01070254 0xe1d614d0 0xe1d617dc IGM_itemComposeKeyPressed+0x88 imm -> 0x7c
+patch bag10 0x010702fc 0xe5d64040 0xe5d6407c IGM_itemComposeKeyPressed+0x130 imm -> 0x7c
+patch bag10 0x01070320 0xe5c63040 0xe5c6307c IGM_itemComposeKeyPressed+0x154 imm -> 0x7c
+patch bag10 0x010703d0 0xe5d61040 0xe5d6107c IGM_itemComposeKeyPressed+0x204 imm -> 0x7c
+patch bag10 0x01070404 0xe5c60040 0xe5c6007c IGM_itemComposeKeyPressed+0x238 imm -> 0x7c
+patch bag10 0x010723d0 0xe1d314d0 0xe1d317dc GameMenuFrame_drawItemBag+0x20 imm -> 0x7c
+patch bag10 0x010729a4 0xe1d314d0 0xe1d317dc GameMenuFrame_drawItemBag+0x5f4 imm -> 0x7c
+patch bag10 0x01072be4 0xe1da34d0 0xe1da37dc GameMenuFrame_drawItemBag+0x834 imm -> 0x7c
+patch bag10 0x01072d0c 0xe1db34d0 0xe1db37dc GameMenuFrame_drawItemBag+0x95c imm -> 0x7c
+patch bag10 0x01072d94 0xe1da34d0 0xe1da37dc GameMenuFrame_drawItemBag+0x9e4 imm -> 0x7c
+patch bag10 0x010736d8 0xe1d234d0 0xe1d237dc GameMenuFrame_drawItemBag+0x1328 imm -> 0x7c
+patch bag10 0x010739f4 0xe1d734d0 0xe1d737dc GameMenuFrame_drawItemBag+0x1644 imm -> 0x7c
+patch bag10 0x010753a8 0xe1d314d0 0xe1d317dc IGM_DrawCube+0x2c4 imm -> 0x7c
+patch bag10 0x010773cc 0xe1da14d0 0xe1da17dc IGM_getPackageItems+0x78 imm -> 0x7c
+patch bag10 0x01077710 0xe1d314d0 0xe1d317dc IGM_getItemsFromOldBoxDB+0x268 imm -> 0x7c
+patch bag10 0x01077c28 0xe1d914d0 0xe1d917dc IGM_getItemsFromLockBoxDB+0x3d4 imm -> 0x7c
+patch bag10 0x010794b4 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x1674 imm -> 0x7c
+patch bag10 0x01079fc0 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x2180 imm -> 0x7c
+patch bag10 0x0107a1dc 0xe1da34d0 0xe1da37dc GameMenuFrame_KeyPressed+0x239c imm -> 0x7c
+patch bag10 0x0107a2a0 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x2460 imm -> 0x7c
+patch bag10 0x0107abfc 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x2dbc imm -> 0x7c
+patch bag10 0x0107b440 0xe1d714d0 0xe1d717dc GameMenuFrame_KeyPressed+0x3600 imm -> 0x7c
+patch bag10 0x0107c76c 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x492c imm -> 0x7c
+patch bag10 0x0107d6e8 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x58a8 imm -> 0x7c
+patch bag10 0x0107d794 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x5954 imm -> 0x7c
+patch bag10 0x0107dd24 0xe1d614d0 0xe1d617dc GameMenuFrame_KeyPressed+0x5ee4 imm -> 0x7c
+patch bag10 0x0107dda0 0xe1d734d0 0xe1d737dc GameMenuFrame_KeyPressed+0x5f60 imm -> 0x7c
+patch bag10 0x0107e900 0xe1d034d0 0xe1d037dc GameMenuFrame_KeyPressed+0x6ac0 imm -> 0x7c
+patch bag10 0x0107e9e4 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x6ba4 imm -> 0x7c
+patch bag10 0x0107f14c 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x730c imm -> 0x7c
+patch bag10 0x0107f2b4 0xe5c32040 0xe5c3207c GameMenuFrame_KeyPressed+0x7474 imm -> 0x7c
+patch bag10 0x01080a38 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x8bf8 imm -> 0x7c
+patch bag10 0x01080c04 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x8dc4 imm -> 0x7c
+patch bag10 0x01080ca4 0xe1d314d0 0xe1d317dc GameMenuFrame_KeyPressed+0x8e64 imm -> 0x7c
+patch bag10 0x01081164 0xe5c32040 0xe5c3207c GameMenuFrame_KeyPressed+0x9324 imm -> 0x7c
+patch bag10 0x010a0be8 0xe5c10040 0xe5c1007c init_ItemBag+0x28 imm -> 0x7c
+patch bag10 0x010a1d8c 0xe1d934d0 0xe1d937dc drawItemBag+0x2d0 imm -> 0x7c
+patch bag10 0x010a2200 0xe5d33040 0xe5d3307c drawItemBag+0x744 imm -> 0x7c
+patch bag10 0x010a2520 0xe1d514d0 0xe1d517dc drawItemBag+0xa64 imm -> 0x7c
+patch bag10 0x010a2544 0xe5d50040 0xe5d5007c drawItemBag+0xa88 imm -> 0x7c
+patch bag10 0x010a2584 0xe5d50040 0xe5d5007c drawItemBag+0xac8 imm -> 0x7c
+patch bag10 0x010a2c68 0xe1d314d0 0xe1d317dc ItemBagKey+0x414 imm -> 0x7c
+patch bag10 0x010a2c9c 0xe5c3a040 0xe5c3a07c ItemBagKey+0x448 imm -> 0x7c
+patch bag10 0x010a2eb0 0xe5d32040 0xe5d3207c ItemBagKey+0x65c imm -> 0x7c
+patch bag10 0x010a2ed8 0xc5c32040 0xc5c3207c ItemBagKey+0x684 imm -> 0x7c
+patch bag10 0x010a2edc 0xd5c32040 0xd5c3207c ItemBagKey+0x688 imm -> 0x7c
+patch bag10 0x010a2f40 0xe5d32040 0xe5d3207c ItemBagKey+0x6ec imm -> 0x7c
+patch bag10 0x010a2f68 0xd5c32040 0xd5c3207c ItemBagKey+0x714 imm -> 0x7c
+patch bag10 0x010a2f6c 0xc5c32040 0xc5c3207c ItemBagKey+0x718 imm -> 0x7c
+patch bag10 0x010a310c 0xe5d70040 0xe5d7007c ItemBagKey+0x8b8 imm -> 0x7c
+patch bag10 0x010a3148 0xe5d70040 0xe5d7007c ItemBagKey+0x8f4 imm -> 0x7c
+patch bag10 0x010a32fc 0xe5d32040 0xe5d3207c ItemBagKey+0xaa8 imm -> 0x7c
+patch bag10 0x010a3310 0xc5c32040 0xc5c3207c ItemBagKey+0xabc imm -> 0x7c
+patch bag10 0x010a3314 0xd5c32040 0xd5c3207c ItemBagKey+0xac0 imm -> 0x7c
+patch bag10 0x010a3354 0xe5d32040 0xe5d3207c ItemBagKey+0xb00 imm -> 0x7c
+patch bag10 0x010a3368 0xd5c32040 0xd5c3207c ItemBagKey+0xb14 imm -> 0x7c
+patch bag10 0x010a336c 0xc5c32040 0xc5c3207c ItemBagKey+0xb18 imm -> 0x7c
+patch bag10 0x010a3454 0xe5c23040 0xe5c2307c ItemBagKey+0xc00 imm -> 0x7c
+patch bag10 0x010a375c 0xe5c15040 0xe5c1507c ItemBagKey+0xf08 imm -> 0x7c
+patch bag10 0x010aa2fc 0xe1d514d0 0xe1d517dc MainMenuFrame_ItemBagKeyPressed+0x50 imm -> 0x7c
+patch bag10 0x010dd0c0 0xe1d314d0 0xe1d317dc NpcUI_DrawSmith_depth+0x188 imm -> 0x7c
+patch bag10 0x010dd344 0xe1d314d0 0xe1d317dc NpcUI_DrawSmith_depth+0x40c imm -> 0x7c
+patch bag10 0x010de73c 0xe1d314d0 0xe1d317dc NpcUI_blackSmithKeyPressed+0xa8 imm -> 0x7c
+patch bag10 0x010de838 0xe5c30040 0xe5c3007c NpcUI_blackSmithKeyPressed+0x1a4 imm -> 0x7c
+patch bag10 0x010de9fc 0xe1d514d0 0xe1d517dc NpcUI_blackSmithKeyPressed+0x368 imm -> 0x7c
+patch bag10 0x010dead8 0xe5c23040 0xe5c2307c NpcUI_blackSmithKeyPressed+0x444 imm -> 0x7c
+patch bag10 0x010debcc 0xe5c23040 0xe5c2307c NpcUI_blackSmithKeyPressed+0x538 imm -> 0x7c
+patch bag10 0x010df718 0xe5c32040 0xe5c3207c NpcUI_blackSmithKeyPressed+0x1084 imm -> 0x7c
+patch bag10 0x010df770 0xe5c23040 0xe5c2307c NpcUI_blackSmithKeyPressed+0x10dc imm -> 0x7c
+patch bag10 0x010df8b8 0xe5c21040 0xe5c2107c NpcUI_blackSmithKeyPressed+0x1224 imm -> 0x7c
+patch bag10 0x010dfec0 0xe5c30040 0xe5c3007c NpcUI_blackSmithKeyPressed+0x182c imm -> 0x7c
+patch bag10 0x010e011c 0xe5c56040 0xe5c5607c NpcUI_blackSmithKeyPressed+0x1a88 imm -> 0x7c
+patch bag10 0x010e0158 0xe5d50040 0xe5d5007c NpcUI_blackSmithKeyPressed+0x1ac4 imm -> 0x7c
+patch bag10 0x010e01cc 0xe5c57040 0xe5c5707c NpcUI_blackSmithKeyPressed+0x1b38 imm -> 0x7c
+patch bag10 0x010e02d8 0xe5c30040 0xe5c3007c NpcUI_blackSmithKeyPressed+0x1c44 imm -> 0x7c
+patch bag10 0x010e1f4c 0xe5da5040 0xe5da507c NpcUI_merchantSelectKeyPressed+0x478 imm -> 0x7c
+patch bag10 0x010e1f54 0xe5ca3040 0xe5ca307c NpcUI_merchantSelectKeyPressed+0x480 imm -> 0x7c
+patch bag10 0x010e1f88 0xe5da1040 0xe5da107c NpcUI_merchantSelectKeyPressed+0x4b4 imm -> 0x7c
+patch bag10 0x010e1f9c 0xe5ca5040 0xe5ca507c NpcUI_merchantSelectKeyPressed+0x4c8 imm -> 0x7c
+patch bag10 0x010e3438 0xe5c32040 0xe5c3207c NpcUI_KeyPressed+0x1b0 imm -> 0x7c
+patch bag10 0x010e3488 0xe5c32040 0xe5c3207c NpcUI_KeyPressed+0x200 imm -> 0x7c
+patch bag10 0x010f3f00 0xe1d434d0 0xe1d437dc ITEMSTORAGE_getCur+0x34 imm -> 0x7c
+patch bag10 0x010f3f18 0xe1d414d0 0xe1d417dc ITEMSTORAGE_getCur+0x4c imm -> 0x7c
+patch bag10 0x010f4014 0xe5d32040 0xe5d3207c ITEMSTORAGE_removeItem+0x80 imm -> 0x7c
+patch bag10 0x010f401c 0xe5c32040 0xe5c3207c ITEMSTORAGE_removeItem+0x88 imm -> 0x7c
+patch bag10 0x010f4110 0xe1dc24d0 0xe1dc27dc ITEMSTORAGE_removeCurItem+0x40 imm -> 0x7c
+patch bag10 0x010f4150 0xe5c32040 0xe5c3207c ITEMSTORAGE_init+0x20 imm -> 0x7c
+patch bag10 0x010f428c 0xe5c23040 0xe5c2307c ITEMSTORAGE_AddSortList+0x84 imm -> 0x7c
+patch bag10 0x010c4b18 0xe92d45f0 0xea03b230 MP_Initialize -> cave_MP_Initialize
+patch bag10 0x010c435c 0xe92d4010 0xea03b35c MP_search -> cave_MP_search
+patch bag10 0x010c4184 0xe1d020d6 0xea03b3b4 MP_getObj -> cave_MP_getObj
+patch bag10 0x010c4988 0xe1d020d6 0xea03b247 MP_return -> cave_MP_return
+patch bag10 0x010f4208 0xe92d4ff0 0xea02f143 ITEMSTORAGE_AddSortList -> bag10_sort
+patch bag10 0x010a11cc 0xe92d47f0 0xea043e32 ItemBag_leftSlotCntOnAllBag -> bag10_left_slot_count
+patch bag10 0x0105f8f8 0xe92d4ff0 0xea054289 GameFrame_save_hero_data -> bag10_save_hero_data
+patch bag10 0x01061e54 0xebfffe78 0xeb053907 GameFrame_load_hero_data+0x1a4 -> bag10_load_storage
+patch bag10 0x010ad230 0xe5c52002 0xea040f63 MainMenuFrame_ClassSelectionKeyPressed+0x94 -> bag10_new_game_a
+patch bag10 0x010ad3bc 0xe5c10002 0xea040f03 MainMenuFrame_GamePlaySelectKeyPressed+0x160 -> bag10_new_game_b
+patch bag10 0x010a2374 0xe2411051 0xea043a44 drawItemBag+0x8b8 -> bag10_draw_tab_a
+patch bag10 0x010a2404 0xe0222398 0xea043a26 drawItemBag+0x948 -> bag10_draw_cursor_a
+patch bag10 0x010a24d8 0xe2411051 0xea0439fc drawItemBag+0xa1c -> bag10_draw_tab_c
+patch bag10 0x010a28e8 0xe2855010 0xea0438fe ItemBagKey+0x94 -> bag10_key_column
+patch bag10 0x010a2b48 0xe0833008 0xea04387b ItemBagKey+0x2f4 -> bag10_touch_tab
+patch bag10 0x010a2ea4 0x1a00001b 0xea0437aa ItemBagKey+0x650 -> bag10_dpad_left
+patch bag10 0x010a2f34 0x1afffe5c 0xea04378d ItemBagKey+0x6e0 -> bag10_dpad_right
+patch bag10 0x0106e21c 0xe3710001 0xea050adc GameMenuFrame_simpleBagKeyOnCube+0x34 -> bag10_cube_key_column
+patch bag10 0x0106e434 0x1a000015 0xea050a6c GameMenuFrame_simpleBagKeyOnCube+0x24c -> bag10_cube_dpad_left
+patch bag10 0x0106e4a8 0x1affff65 0xea050a56 GameMenuFrame_simpleBagKeyOnCube+0x2c0 -> bag10_cube_dpad_right
+patch bag10 0x0106e6bc 0xe083300a 0xea0509da GameMenuFrame_simpleBagKeyOnCube+0x4d4 -> bag10_cube_touch_tab
+patch bag10 0x01064a6c 0xe0822007 0xea0530f4 GameMenuFrame_drawBsBag+0x490 -> bag10_bs_draw_tab
+patch bag10 0x01064b0c 0xe0222399 0xea0530d2 GameMenuFrame_drawBsBag+0x530 -> bag10_bs_draw_cursor
+patch bag10 0x010d7a9c 0xe0822007 0xea0364f4 NpcUI_drawBg+0x28c -> bag10_shop_draw_tab
+patch bag10 0x010d7b3c 0xe0222399 0xea0364d7 NpcUI_drawBg+0x32c -> bag10_shop_draw_cursor
+patch bag10 0x010d55c0 0xe3710001 0xea036e41 NpcUI_tableKeyPressed+0x4c -> bag10_shop_key_column
+patch bag10 0x010d57bc 0x1a00000d 0xea036ddd NpcUI_tableKeyPressed+0x248 -> bag10_shop_dpad_left
+patch bag10 0x010d5814 0x1affff61 0xea036dd2 NpcUI_tableKeyPressed+0x2a0 -> bag10_shop_dpad_right
+patch bag10 0x010d5ab4 0xe0833006 0xea036d38 NpcUI_tableKeyPressed+0x540 -> bag10_shop_touch_tab
+patch skin 0x010e7e38 0xeb0026e2 0xeb032abc Load_Sprite_HeroImages+0xd8 -> skin_getEquip
+patch skin 0x010e807c 0xeb002651 0xeb032a2b Load_Sprite_HeroImages+0x31c -> skin_getEquip
+patch skin 0x010e8090 0xeb00264c 0xeb032a26 Load_Sprite_HeroImages+0x330 -> skin_getEquip
+patch skin 0x010e80a4 0xeb002647 0xeb032a21 Load_Sprite_HeroImages+0x344 -> skin_getEquip
+patch skin 0x010e80e4 0xeb002637 0xeb032a11 Load_Sprite_HeroImages+0x384 -> skin_getEquip
+patch skin 0x010d41bc 0xeb007601 0xeb0379db NPC_getHeroImgbyFolder+0x50 -> skin_getEquip
+patch skin 0x010d41f4 0xeb0075f3 0xeb0379cd NPC_getHeroImgbyFolder+0x88 -> skin_getEquip
+patch skin 0x010d420c 0xeb0075ed 0xeb0379c7 NPC_getHeroImgbyFolder+0xa0 -> skin_getEquip
+patch skin 0x010d463c 0xeb0074e1 0xeb0378bb NPC_LoadImageAllCharacter+0x420 -> skin_getEquip
+patch skin 0x010d4658 0xeb0074da 0xeb0378b4 NPC_LoadImageAllCharacter+0x43c -> skin_getEquip
+patch skin 0x010d467c 0xeb0074d1 0xeb0378ab NPC_LoadImageAllCharacter+0x460 -> skin_getEquip
+patch skin 0x010d4694 0xeb0074cb 0xeb0378a5 NPC_LoadImageAllCharacter+0x478 -> skin_getEquip
+patch skin 0x010d46b0 0xeb0074c4 0xeb03789e NPC_LoadImageAllCharacter+0x494 -> skin_getEquip
+patch skin 0x010d721c 0xe92d4ff0 0xea036eee NpcUI_DrawSmith_Main -> skin_smith_draw
+patch skin 0x010de694 0xe92d4ff0 0xea035775 NpcUI_blackSmithKeyPressed -> skin_smith_key_entry
+patch skin 0x010d4ef8 0xe12fff1e 0xea037d58 NpcUI_setBlackSmith+0x8c -> skin_smith_reset_tail
+patch skin 0x010a1df0 0xe1d819d6 0xea0449a4 drawItemBag+0x334 -> skin_dim_detour
+patch skin 0x010ec018 0xe7d46005 0xea032122 SPR_drawSprite+0x15c -> skin_hide_layer_detour
+patch options 0x010b3154 0x13a0300a 0xea03fdc2 MainMenuFrame_drawOption+0x164 -> opt_draw_count_detour
+patch options 0x010b3230 0xe3540008 0xea03fd90 MainMenuFrame_drawOption+0x240 -> opt_draw_row_detour
+patch options 0x010a90a8 0x13a02009 0xea0425fb MainMenuOptionListKey+0x18 -> opt_listkey_max_detour
+patch options 0x010aacd4 0xe92d4ff0 0xea041ef5 MainMenuOptionKey -> opt_key_entry
+patch options 0x01097e64 0xe92d47f0 0xea046a98 HERO_add_Exp -> opt_exp_entry
+patch savexfer 0x010b3530 0xe28ddf69 0xea03fceb MainMenuFrame_drawOption+0x540 -> opt_overlay_detour
+patch autoatk 0x0105ea90 0xeb0175ef 0xeb05455f GameFrame_Process+0x98 -> autoatk_world_tick
+patch autoatk 0x0108f250 0xe92d4ff0 0xea048401 HERO_Check_Autotarget -> autoatk_autotarget_entry
+sym 0x011b0000 cave_entry
+sym 0x011b0004 autoatk_forcing
+sym 0x011b0014 autoatk_world_tick
+sym 0x011b01c0 target_ok
+sym 0x011b025c autoatk_autotarget_entry
+sym 0x011b0278 bag10_load_storage
+sym 0x011b0324 bag10_save_hero_data
+sym 0x011b071c bag10_sort
+sym 0x011b0a9c bag10_left_slot_count
+sym 0x011b0c8c bag10_draw_tab_a
+sym 0x011b0ca4 bag10_draw_cursor_a
+sym 0x011b0cd0 bag10_draw_tab_c
+sym 0x011b0ce8 bag10_key_column
+sym 0x011b0d3c bag10_touch_tab
+sym 0x011b0d54 bag10_dpad_left
+sym 0x011b0d70 bag10_dpad_right
+sym 0x011b0d94 bag10_cube_key_column
+sym 0x011b0dec bag10_cube_dpad_left
+sym 0x011b0e08 bag10_cube_dpad_right
+sym 0x011b0e2c bag10_cube_touch_tab
+sym 0x011b0e44 bag10_bs_draw_tab
+sym 0x011b0e5c bag10_bs_draw_cursor
+sym 0x011b0e74 bag10_shop_draw_tab
+sym 0x011b0ea0 bag10_shop_draw_cursor
+sym 0x011b0ecc bag10_shop_key_column
+sym 0x011b0f38 bag10_shop_dpad_left
+sym 0x011b0f64 bag10_shop_dpad_right
+sym 0x011b0f9c bag10_shop_touch_tab
+sym 0x011b0fc4 bag10_new_game_a
+sym 0x011b0fd0 bag10_new_game_b
+sym 0x011b1020 memcpy
+sym 0x011b1040 memset
+sym 0x011b105c cave_MP_getObj
+sym 0x011b10d4 cave_MP_search
+sym 0x011b12ac cave_MP_return
+sym 0x011b13e0 cave_MP_Initialize
+sym 0x011b16d8 opt_load
+sym 0x011b17b8 opt_row_count
+sym 0x011b17f8 opt_max_index
+sym 0x011b1838 opt_xfer_action
+sym 0x011b1908 opt_modal_show
+sym 0x011b1970 opt_xfer_answer
+sym 0x011b1980 opt_draw_overlay
+sym 0x011b1dcc opt_draw_row
+sym 0x011b209c opt_key
+sym 0x011b270c opt_cycle
+sym 0x011b280c opt_exp_scale
+sym 0x011b2864 opt_draw_count_detour
+sym 0x011b2878 opt_draw_row_detour
+sym 0x011b289c opt_listkey_max_detour
+sym 0x011b28b0 opt_key_entry
+sym 0x011b28cc opt_exp_entry
+sym 0x011b28e4 opt_overlay_detour
+sym 0x011b28f8 __aeabi_idiv
+sym 0x011b28fc __aeabi_uidiv
+sym 0x011b2900 __aeabi_idivmod
+sym 0x011b2918 __aeabi_uidivmod
+sym 0x011b2930 skin_getEquip
+sym 0x011b2aa0 skin_find
+sym 0x011b2b2c skin_part_byte
+sym 0x011b2b60 skin_dim_alpha
+sym 0x011b2d04 can_pick_worn
+sym 0x011b2d98 skin_smith_reset
+sym 0x011b2ddc skin_smith_draw
+sym 0x011b3400 skin_smith_key
+sym 0x011b3e1c confirm_act
+sym 0x011b4460 skin_smith_reset_tail
+sym 0x011b4470 skin_smith_key_entry
+sym 0x011b4488 skin_dim_detour
+sym 0x011b44a8 skin_hide_layer_detour
+sym 0x011b44e8 orig_NpcUI_blackSmithKeyPressed
+sym 0x011b44f0 orig_MainMenuOptionKey
+sym 0x011b44f8 orig_HERO_add_Exp
+sym 0x011b4500 orig_HERO_Check_Autotarget
+sym 0x011b4688 rank_by_kind
+sym 0x011b46c8 rows
+sym 0x011b47e0 cave_cfg
+sym 0x011b47f0 aa_forcing
+sym 0x011b47f1 aa_tick
+sym 0x011b47f4 storage10
+sym 0x011b4874 save_buf
+sym 0x011b6c7c bag10_sort.list
+sym 0x011b6fc0 item_pool
+sym 0x011c4fc0 opt_loaded
+sym 0x011c4fc8 opt
+sym 0x011c4fd0 opt_xfer_last_action
+sym 0x011c4fd4 opt_xfer_last_answer
+sym 0x011c4fd8 opt_modal
+sym 0x011c5078 skin_scratch
+sym 0x011c5158 ss
+sym 0x011c5159 ss_sel
+sym 0x011c515c ss_msg
+sym 0x011c5160 worn_item
+sym 0x011c5164 donor_item
+sym 0x011c5168 skin_loaded
+sym 0x011c516c skin_tab
+sym 0x011c616c worn_lo
+sym 0x011c6170 worn_hi
+sym 0x011c6174 donor_lo
+sym 0x011c6178 donor_hi

@@ -1,0 +1,56 @@
+# --- build output ----------------------------------------------------------
+/target
+/android_app/.gradle
+/android_app/build
+/android_app/app/build
+/android_app/local.properties
+
+# The build script copies these in from payload/ before every gradle run
+# (build_android.ps1). Committing them would just duplicate 21 MB.
+/android_app/app/src/main/assets/*.so
+/android_app/app/src/main/assets/*.mp3
+/android_app/app/src/main/jniLibs
+
+# --- signing ---------------------------------------------------------------
+# `build_android.ps1 -NewKeystore` writes one of these. Never commit it.
+*.jks
+*.keystore
+keystore.properties
+# Server and signing key material. Kept outside the repository by rule, but
+# easy to drop next to it; once pushed it cannot be taken back.
+*.pem
+*.p12
+
+# --- cs_probe frame dumps --------------------------------------------------
+# `--dump` writes 7 MB PNGs; the A/B comparison runs leave dozens of these.
+/out
+/out_*
+
+# --- cs_server runtime state -----------------------------------------------
+# Where the private server stores saves uploaded by 환경설정 -> 데이터 관리.
+# Real player data, written at runtime; it is the server's state, not source.
+/cs_server/savedata
+
+# --- editors / OS ----------------------------------------------------------
+.idea/
+.vscode/
+*.iml
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Release APKs staged for hand-off, named after the versionCode by
+# build_android.ps1: dist/chronosSword1_v0.<code>.apk. Binaries, 27 MB each.
+dist/
+
+# tools_re/*.py leave these behind whenever they are imported as modules.
+__pycache__/
+
+# --- Claude Code, machine-local -------------------------------------------
+# Deploy-key permission rules. Personal to this checkout; not the team's.
+.claude/settings.local.json
+
+# --- reference mod (30 MB) --------------------------------------------------
+# The Chronos Sword 2 mod the cave/ features are ported from. Kept next to the
+# other reference APKs but not committed; the analysis lives in CLAUDE.md.
+/chronosSword/*2.apk

@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = ["cs_core", "cs_probe", "cs_android"]
+
+# A bare `cargo build` at the root builds for the host, and `cs_android` cannot:
+# it pulls winit/android-activity, which only make sense with an android target.
+# Leaving it out of the defaults means `cargo build` / `cargo test` do the right
+# thing here, while `build_android.ps1` names it explicitly (`-p cs_android`).
+default-members = ["cs_core", "cs_probe"]
+
+# Vendored fork of the ARM32 interpreter, extended for the ARMv5TE encodings
+# `libchronosMian.so` actually uses (SMUL<x><y>, SMLA/SMLAW/SMLAL, LDRD/STRD) —
+# upstream targets ARMv4T and mis-decodes all of them. Kept out of the member
+# list so its own dev-dependencies never enter this build.
+exclude = ["vendor/arm32_cpu", "vendor/softbuffer"]
+
+# Vendored fork of softbuffer 0.4.8. Its Android present path was doing two
+# things per frame that a 2400x1080 window cannot afford, both between the
+# guest's frame and the compositor: `buffer_mut()` allocated AND ZEROED a fresh
+# 10 MB Vec on every call, and `present()` swizzled BGRA->RGBA one byte at a
+# time. Measured here before the fork: ~18 fps whatever the interpreter did,
+# because neither cost depends on the guest. Only `src/backends/android.rs` and
+# two helpers in `src/util.rs` differ from the published crate, each marked in
+# the source. Adopted from the sibling hero3 project, which diagnosed it.
+[patch.crates-io]
+softbuffer = { path = "vendor/softbuffer" }
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Proprietary"
+
+[workspace.dependencies]
+arm32_cpu = { path = "vendor/arm32_cpu" }
+log = "0.4"
+
+[profile.dev]
+# The whole app is one hot loop (guest instruction decode + dispatch). An
+# unoptimized interpreter is ~50x slower and makes the probe unusable for
+# iteration, so debug builds are optimized too; `debug-assertions` stay on.
+opt-level = 3
+
+[profile.release]
+lto = true
+codegen-units = 1

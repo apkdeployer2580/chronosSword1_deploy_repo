@@ -1,0 +1,38 @@
+[package]
+name = "cs_android"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+# GameActivity loads System.loadLibrary("main"), so the cdylib must be libmain.so.
+name = "main"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+cs_core = { path = "../cs_core" }
+# `release_max_level_info` compiles the guest's per-call HLE trace out of release
+# builds entirely. Without it every one of those `log::debug!` sites still costs
+# an atomic level load, on the thread with the frame budget.
+log = { version = "0.4", features = ["release_max_level_info"] }
+
+# winit brings android-activity (GameActivity) transitively; depending on
+# android-activity directly here would risk two incompatible copies.
+winit = { version = "0.30", features = ["android-game-activity"] }
+softbuffer = "0.4"
+# Audio output. cpal's Android backend drives AAudio directly — it does NOT pull
+# `oboe`, which would need a C++ toolchain the cargo-ndk cross-build here does
+# not have. See audio_out.rs.
+cpal = "0.17"
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.14"
+# For AndroidApp::asset_manager()'s return type (the bundled guest + VFS).
+ndk = "0.9"
+# Gamepad presence (`pad.rs`): the NDK has no input-device enumeration, so
+# InputDevice.getDeviceIds()/getSources() is asked over JNI. `ndk-context` is
+# how the JavaVM android-activity already registered is found; both crates are
+# already in the tree transitively, so this pins no new code.
+jni = "0.21"
+ndk-context = "0.1"

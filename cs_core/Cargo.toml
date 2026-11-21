@@ -1,0 +1,13 @@
+[package]
+name = "cs_core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+arm32_cpu.workspace = true
+log.workspace = true
+# Pure-Rust Ogg Vorbis decoder: two thirds of the game's asset archive is Vorbis
+# (see audio.rs). Pure Rust matters here — a C decoder would need cmake in the
+# cargo-ndk cross-build, which this host does not have.
+lewton = { version = "0.10", default-features = false, features = ["ogg"] }

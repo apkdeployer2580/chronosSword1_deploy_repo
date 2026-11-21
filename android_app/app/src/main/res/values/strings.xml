@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launcher label. The original APK's application-label is the same string;
+         keeping it means a player recognises the icon they already know. -->
+    <string name="app_name">크로노스소드</string>
+</resources>

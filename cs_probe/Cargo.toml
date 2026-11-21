@@ -1,0 +1,17 @@
+[package]
+name = "cs_probe"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+# `armdiff` is a second binary in this package (the CPU differential-test
+# helper), which makes a bare `cargo run -p cs_probe` ambiguous.
+default-run = "cs_probe"
+
+# Headless driver: boots the guest with no window and no device, so the whole
+# runtime can be exercised (and A/B compared frame-by-frame) on a desktop.
+[dependencies]
+cs_core = { path = "../cs_core" }
+# For the `armdiff` differential-test helper, which drives the interpreter
+# directly rather than through the VM.
+arm32_cpu.workspace = true
+log.workspace = true
